@@ -3,16 +3,11 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class ListService {
-
+export class UsersService {
   constructor() { }
 
-  async getProducts(){
-    const res = await fetch('https://fakestoreapi.com/products');
+  async getUsers(){
+    const res = await fetch('https://fakestoreapi.com/users');
     return await res.json();
   }
-
-  
-
 }
-
